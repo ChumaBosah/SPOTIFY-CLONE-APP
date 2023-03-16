@@ -9,18 +9,26 @@ import {BsVolumeDown} from 'react-icons/bs'
 import {RxSlider} from 'react-icons/rx'
 import {BsVolumeUp} from 'react-icons/bs'
 import {RiPlayListLine} from 'react-icons/ri'
-import { Sucka } from '../images';
+import { useDataLayerValue } from './DataLayer';
 
 
 function Footer() {
+    const [{item}, dispatch] = useDataLayerValue();
   return (
     <div className='footer'>
      <div className='footer-left'>
-     <img src={Sucka} className='album-logo' />
-     <div className='song-info'>
-        <h4>Sucka or Sum</h4>
-        <p>Rae Sremmurd</p>
-     </div>
+     <img src={item?.album.images[0].url} alt={item?.name} className='album-logo' />
+    {item ? (
+      <div className='song-info'>
+        <h4>{item.name}</h4>
+        <p>{item.artists.map((artist) => artist.name).join(", ")}</p>
+      </div>
+    ) : (
+      <div className='song-info'>
+        <h4>No song is playing</h4>
+        <p>...</p>
+      </div>
+    )}
      </div>
      <div className='footer-center'>
      <div className='footer-icon'>
