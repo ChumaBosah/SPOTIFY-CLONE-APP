@@ -10,7 +10,7 @@ function SongRow({ track, playSong}) {
     <div className='song-row' onClick={() => playSong(track.id)}>
       <img className='row-album' src={track.album.images[0].url} alt='' />
       <div className='row-info'>
-        <h1>{track.name}</h1>
+        <h3>{track.name}</h3>
         <p>
             {track.artists.map((artist) => artist.name).join(", ")} -{" "}
             {track.album.name}
