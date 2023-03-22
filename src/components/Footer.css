@@ -23,7 +23,7 @@
     width: 450px;
     height: 67px;
     background-color: whitesmoke;
-    margin-left: 180px;
+    margin-left: 18px;
 }
 .footer-right {
     flex: 0.3;
@@ -33,7 +33,7 @@
         margin-left: 80px;
 }
 .footer-icon {
-    margin-left: 140px;
+    margin-left: 120px;
     padding: 15px;
 }
 
