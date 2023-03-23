@@ -8,10 +8,10 @@ import {MdOutlineExplore} from 'react-icons/md'
 import { useDataLayerValue } from './DataLayer';
 
 function Sidebar() {
-    const [{ playlists }, dispatch] = useDataLayerValue();
+    const [{ playlists }] = useDataLayerValue();
   return (
     <div className='sidebar'>
-   <img src= {Spotify_Black } className='logo' /> 
+   <img src= {Spotify_Black } alt='' className='logo' /> 
    <SidebarOption Icon={BiHomeAlt} title='Home' />
    <SidebarOption Icon={BiTrendingUp} title='Trend' />
    <SidebarOption Icon={MdOutlineExplore} title='Feed' />

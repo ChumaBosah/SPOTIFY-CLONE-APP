@@ -10,7 +10,7 @@ import SongRow from './SongRow';
 import TopArtists from './TopArtists';
 
 function Body({spotify }) {
-    const [{ discover_weekly }, dispatch] = useDataLayerValue();
+    const [{ discover_weekly },] = useDataLayerValue();
   return (
     <div className='body'>
   <Header spotify ={spotify}/>
@@ -39,7 +39,7 @@ function Body({spotify }) {
      </div>
     <div className='banner'>
     <div className='img-cover'>
-    <img src={banner} id='img-banner' />
+    <img src={banner} alt='' id='img-banner' />
     </div>
       <p className='artist'>Artist</p>
       <h2 className='on-top'>On Top </h2> 

@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect} from 'react';
 import './App.css';
 import Login from './components/Login';
  import { getTokenFromUrl } from './spotify';
@@ -10,7 +10,7 @@ import { useDataLayerValue } from './components/DataLayer';
 function App() {
 
   
-  const [{user , token}, dispatch] = useDataLayerValue();
+  const [{token}, dispatch] = useDataLayerValue();
 
 
   useEffect(() => {

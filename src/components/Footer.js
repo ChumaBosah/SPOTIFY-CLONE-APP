@@ -13,7 +13,7 @@ import { useDataLayerValue } from './DataLayer';
 
 
 function Footer() {
-    const [{item}, dispatch] = useDataLayerValue();
+    const [{item}] = useDataLayerValue();
   return (
     <div className='footer'>
      <div className='footer-left'>

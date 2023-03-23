@@ -11,15 +11,15 @@ function TopArtists( {artist}) {
     <h2>Top Artists</h2>
     <div className='artist-info'>
     <div className='taylor'>
-    <img src={taylor} id='taylor' />
+    <img src={taylor} alt='' id='taylor' />
    <h5>Taylor Swift</h5>
    </div>
    <div className='kanye'>
-   <img src={kanye} id='kanye' />
+   <img src={kanye} alt='' id='kanye' />
    <h5>Kanye West</h5>
    </div>
    <div className='drake'>
-   <img src={Drake} id='drake' />
+   <img src={Drake} alt='' id='drake' />
    <h5>Drake</h5>
    </div>
     </div>
